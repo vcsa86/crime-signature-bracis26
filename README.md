@@ -39,11 +39,9 @@ python src/Optimization/optimize_tabnet.py
 python src/Training/train_lgbm_ablation.py
 python src/Training/train_tabnet_ablation.py
 ```
-### 3. Analysis & Visualization
+### 3. Analysis
 ```bash
 python src/Analysis/_final_explainability.py
-python src/Visualization/generate_result_figures.py
-python src/Visualization/plot_risk_maps.py
 ```
 
 ## 📂 Project Structure
@@ -57,12 +55,10 @@ PROJECT/
 │   ├── ETL/                                # Data Engineering
 │   ├── Optimization/                       # Hyperparameter Tuning
 │   ├── Training/                           # Ablation Experiments
-│   ├── Analysis/                           # XAI (SHAP, Bootstrap, Top-K)
-│   └── Visualization/                      # Risk Maps and Figures
+│   └── Analysis/                           # XAI (SHAP, Bootstrap, Top-K)
 ├── results/                                # Output Artifacts
 │   ├── models/                             # Persisted .txt and .zip models
 │   ├── rankings/                           # Probability CSVs
-│   ├── analysis/                           # Statistical tables
-│   └── figures/                            # Maps and Plots
+│   └── analysis/                           # Statistical tables
 └── requirements.txt
 
